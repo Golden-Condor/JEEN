@@ -1,198 +1,95 @@
-/* Reset and base styles */
+/* Reset some default styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Basic styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #fff;
+    background-color: #f4f4f4;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header styles */
 header {
-    background-color: #fff;
+    background: #333;
+    color: #fff;
     padding: 10px 0;
-    border-bottom: 1px solid #e0e0e0;
 }
 
 header .container {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
-.logo img {
-    height: 40px;
-}
-
-.delivery-address input,
-.search-bar input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.search-bar input {
-    width: 300px;
-}
-
-.account-options a,
-.cart a {
-    text-decoration: none;
-    color: #333;
-    margin-left: 15px;
-}
-
-/* Navigation styles */
-nav {
-    background-color: #f8f8f8;
-    padding: 10px 0;
+header h1 {
+    margin: 0;
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333;
-    display: flex;
-    align-items: center;
-}
-
-nav ul li a img {
-    width: 24px;
-    margin-right: 5px;
-}
-
-/* Filters section */
-.filters {
-    padding: 20px 0;
-    text-align: center;
-}
-
-.filters button {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 8px 15px;
-    margin: 0 5px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.filters button:hover {
-    background-color: #f0f0f0;
-}
-
-/* Fresh Deals section */
-.fresh-deals {
-    padding: 20px 0;
-}
-
-.fresh-deals h2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.fresh-deals h2 a {
-    font-size: 0.8em;
-    color: #4a90e2;
+    color: #fff;
     text-decoration: none;
 }
 
-.product-carousel {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding-bottom: 20px;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-.product-card {
-    flex: 0 0 auto;
-    width: 200px;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    padding: 10px;
+#hero {
+    background: #333;
+    color: #fff;
+    padding: 40px 0;
     text-align: center;
 }
 
-.product-card img {
-    width: 100%;
-    height: auto;
+#hero h2 {
+    font-size: 2.5em;
+}
+
+#hero .cta-button {
+    background: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#hero .cta-button:hover {
+    background: #d43f15;
+}
+
+section {
+    padding: 20px 0;
+}
+
+section h2 {
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
-.product-card h3 {
-    font-size: 1em;
-    margin-bottom: 5px;
-}
-
-.product-card .price {
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.product-card button {
-    background-color: #4a90e2;
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.product-card button:hover {
-    background-color: #3a7bc8;
-}
-
-/* Footer styles */
 footer {
-    background-color: #f8f8f8;
-    padding: 20px 0;
+    background: #333;
+    color: #fff;
     text-align: center;
+    padding: 10px 0;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .search-bar input {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-    }
-
-    nav ul li {
-        flex: 0 0 50%;
-        margin-bottom: 10px;
-    }
-
-    .product-carousel {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .product-card {
-        width: calc(50% - 20px);
-    }
+footer .container {
+    width: 80%;
+    margin: 0 auto;
 }
