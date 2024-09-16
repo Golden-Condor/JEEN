@@ -1,18 +1,25 @@
-<section id="cart"></section>
+<section id="cart">
     <h2>Shopping Cart</h2>
+
+    <!-- Cart Item -->
     <div class="cart-item">
-        <img src="beef.jpg" alt="Beef">
-        <p>Grass-Fed Beef - $12.99/lb</p>
-        <label for="quantity">Quantity:</label>
-        <input type="number" value="1">
-        <p>Total: $12.99</p>
+        <img src="beef.jpg" alt="Beef" class="cart-item-img">
+        <div class="cart-item-details">
+            <p><a href="beef-product.html">Grass-Fed Beef</a> - $12.99/lb</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" value="1" min="1">
+            <p>Total: $12.99</p>
+        </div>
+        <button class="remove-item">Remove</button>
     </div>
-    <!-- Add more cart items as needed -->
+    <!-- Add more cart items following this same format -->
+    
+    <!-- Cart Summary -->
     <div class="cart-summary">
         <h3>Order Summary</h3>
-        <p>Items Total: $xx.xx</p>
-        <p>Delivery: $xx.xx</p>
-        <h3>Total: $xx.xx</h3>
-        <button>Checkout</button>
+        <p>Items Total: <span id="items-total">$12.99</span></p>
+        <p>Delivery: <span id="delivery-fee">$5.00</span></p>
+        <h3>Total: <span id="total-amount">$17.99</span></h3>
+        <button class="checkout-btn">Checkout</button>
     </div>
 </section>
