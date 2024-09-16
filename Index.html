@@ -9,46 +9,63 @@
 <body>
     <header>
         <div class="container">
-            <h1>Pangia</h1>
-            <nav>
-                <ul>
-                    <li><a href="#meats">Meats & Seafood</a></li>
-                    <li><a href="#dairy">Dairy</a></li>
-                    <li><a href="#produce">Produce</a></li>
-                    <li><a href="#drygoods">Dry Goods</a></li>
-                </ul>
-            </nav>
+            <div class="logo">
+                <img src="logo.png" alt="Pangia Logo">
+            </div>
+            <div class="delivery-address">
+                <span>Delivery</span>
+                <input type="text" placeholder="Enter your address">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="account-options">
+                <a href="#office">Go to Office</a>
+                <a href="#account">Account</a>
+            </div>
+            <div class="cart">
+                <a href="#cart"><img src="cart-icon.png" alt="Cart"></a>
+            </div>
         </div>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="#prepared"><img src="prepared-icon.png" alt="">Prepared & Deli</a></li>
+            <li><a href="#produce"><img src="produce-icon.png" alt="">Produce</a></li>
+            <li><a href="#meat"><img src="meat-icon.png" alt="">Meat & Seafood</a></li>
+            <li><a href="#dairy"><img src="dairy-icon.png" alt="">Dairy</a></li>
+            <!-- Add more categories as needed -->
+        </ul>
+    </nav>
+
+    <section class="filters">
+        <h3>Shop by</h3>
+        <button>Peak Quality</button>
+        <button>New</button>
+        <button>Gluten-Free</button>
+        <button>Organic</button>
+        <button>Kosher</button>
+        <button>Local</button>
+    </section>
+
     <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h2>Fresh Organic Food Delivered to Your Door</h2>
-                <p>Explore our selection of high-quality organic meats, dairy, produce, and dry goods.</p>
-                <a href="#shop" class="cta-button">Start Shopping</a>
-            </div>
-        </section>
-        <section id="categories">
-            <div class="container">
-                <div class="category">
-                    <h2>Meats & Seafood</h2>
-                    <p>Discover our range of organic meats and seafood. From grass-fed beef to fresh fish, we have it all.</p>
+        <section class="fresh-deals">
+            <h2>Fresh Deals: The week's best for less <a href="#view-all">View all</a></h2>
+            <div class="product-carousel">
+                <!-- Product cards go here -->
+                <div class="product-card">
+                    <img src="product1.jpg" alt="Product 1">
+                    <h3>Product Name</h3>
+                    <p>Brand</p>
+                    <p class="price">$XX.XX</p>
+                    <button>Add to Cart</button>
                 </div>
-                <div class="category">
-                    <h2>Dairy</h2>
-                    <p>Enjoy our selection of organic dairy products, including milk, cheese, and yogurt.</p>
-                </div>
-                <div class="category">
-                    <h2>Produce</h2>
-                    <p>Fresh, organic fruits and vegetables delivered straight to your door.</p>
-                </div>
-                <div class="category">
-                    <h2>Dry Goods</h2>
-                    <p>Explore our range of organic dry goods, including grains, pasta, and snacks.</p>
-                </div>
+                <!-- More product cards -->
             </div>
         </section>
     </main>
+
     <footer>
         <div class="container">
             <p>&copy; 2024 Pangia. All rights reserved.</p>
